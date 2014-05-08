@@ -1,0 +1,34 @@
+2D convolution using MPI task and data parallelism
+Group 1: Reading file 1_im1 takes 0.067403 s.
+Group 2: Reading file 1_im2 takes 0.067594 s.
+Group 1: Scattering 1_im1(row) to each processor takes 0.007519 s.
+Group 2: Scatter 1_im2(row) to each processor takes 0.008783 s.
+Group 1: FFT each row for 1_im1 takes 0.005132 s.
+Group 2: FFT each row for 1_im2 takes 0.005144 s.
+Group 2: Gather all the data of 1_im2(row) takes 0.007671 s.
+Group 1: Gathering all the data of 1_im1(row) takes 0.008655 s.
+Group 1: Scattering 1_im1(column) to each processor takes 0.009829 s.
+Group 2: Scatter 1_im2(column) to each processor takes 0.009691 s.
+Group 1: FFT each column for 1_im1 takes 0.005676 s.
+Group 2: FFT each column for 1_im2 takes 0.005687 s.
+Group 2: Gather all the data of 1_im2(column) takes 0.008975 s.
+Group 2: Total time for task 2 in group 2 takes 0.113545 s.
+Group 1: Gathering all the data of 1_im1(column) takes 0.009121 s.
+Group 1: Total time for task 1 in group 1 takes 0.113335 s.
+Group 3: Receiving data from group 1 and group 2 takes 0.113502 s.
+Group 3: Scattering data for multiplication takes 0.019418 s.
+Group 3: Matrix multiplication takes 0.195988 s.
+Group 3: Gathering data after Matrix multiplication takes 0.037586 s.
+Group 3: Total time for task 3 in group 3 takes 0.366494 s.
+Group 4: Receiving data from group 3 takes 0.367451 s.
+Group 4: Scattering data of rows to each processor takes 0.004891 s.
+Group 4: Inverse-2DFFT(row) takes 0.005468 s.
+Group 4: Gathering data of Inverse-2DFFT(row) takes 0.004967 s.
+Group 4: Scattering data of columns to each processor takes 0.007053 s.
+Group 4: Inverse-2DFFT(column) takes 0.005976 s.
+Group 4: Gathering data of Inverse-2DFFT(column) takes 0.005267 s.
+Group 4: Writing file to out_1 takes 0.193540 s.
+Total communication time of 2D convolution using MPI task parallel takes 0.035124 s.
+Total computing time of 2D convolution using MPI task parallel takes 0.010808 s.
+Total running time without loading/writing of 2D convolution using MPI task parallel takes 0.045932 s.
+Total running time of 2D convolution using MPI task parallel takes 0.596411 s.

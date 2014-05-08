@@ -1,0 +1,20 @@
+2D convolution using SPMD model and MPI Collective operations
+Reading file takes 0.135280 s.
+Scattering data of rows to each processor takes 0.011474 s.
+FFT each row for input im1 and im2 takes 0.002791 s.
+Gathering all the data from different rows takes 0.010345 s.
+Scattering data of columns to each processor takes 0.018761 s.
+FFT each column for input im1 and im2 takes 0.003377 s.
+Gathering all the data from different columns takes 0.021645 s.
+Scattering data for multiplication takes 0.024289 s.
+Matrix multiplication takes 0.056082 s.
+Inverse-2DFFT for out_1(row) takes 0.001437 s.
+Gathering all the data of Inverse-2DFFT for out_1(row) takes 0.006603 s.
+Scattering out_1(column) to each processor takes 0.008089 s.
+Inverse-2DFFT out_1(column) takes 0.001486 s.
+Gathering all the data of the output file(column) takes 0.010150 s.
+Writing the output file to file takes 0.349673 s.
+Total communication time of 2D convolution using MPI_Scatter&MPI_Gather takes 0.104753 s.
+Total computing time of 2D convolution using MPI_Scatter&MPI_Gather takes 0.071776 s.
+Total running time without loading/writing of 2D convolution using MPI_Scatter&MPI_Gather takes 0.176529 s.
+Total running time of 2D convolution using MPI_Scatter&MPI_Gather takes 0.661482 s.

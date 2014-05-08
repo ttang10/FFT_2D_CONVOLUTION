@@ -1,0 +1,20 @@
+2D convolution using SPMD model and MPI-OpenMP operations
+Reading file takes 0.097149 s.
+Sending data of rows to each processor takes 0.009682 s.
+FFT each row for input im1 and im2 takes 0.019692 s.
+Receiving all the data from different rows takes 0.009850 s.
+Sending data of columns to each processor takes 0.010752 s.
+FFT each column for input im1 and im2 takes 0.021744 s.
+Receiving all the data from different columns takes 0.010622 s.
+Sending data for multiplication takes 0.014558 s.
+Matrix multiplication takes 0.587512 s.
+Inverse-2DFFT for out_1(row) takes 0.010345 s.
+Receiving all the data of Inverse-2DFFT for out_1(row) takes 0.002933 s.
+Sending out_1(column) to each processor takes 0.004811 s.
+Inverse-2DFFT out_1(column) takes 0.011229 s.
+Receiving all the data of the output file(column) takes 0.005505 s.
+Writing the output file to file takes 0.149522 s.
+Total communication time of 2D convolution using MPI-OpenMP takes 0.065780 s.
+Total computing time of 2D convolution using MPI-OpenMP takes 0.653455 s.
+Total running time without loading/writing of 2D convolution using MPI_OpenMP takes 0.719235 s.
+Total running time of 2D convolution using MPI_OpenMP takes 0.965906 s.

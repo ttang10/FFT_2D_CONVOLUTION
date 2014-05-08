@@ -1,0 +1,2 @@
+/etc/bashrc: line 91: ulimit: open files: cannot modify limit: Operation not permitted
+/opt/gridengine/default/spool/gpu-compute-1-1/job_scripts/8207: line 2: : command not found
